@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections Portfolio | Maya Collection Bengaluru</title>
+    <meta name="description" content="Browse our luxury ethnic clothing, festive wear, and modern casual designs. High quality fabrics crafted meticulously in Bangalore.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loader" id="page-loader"><div class="loader-spinner"></div></div>
+    <div class="custom-cursor" id="custom-cursor"></div>
+
+    <header class="navbar navbar-inner" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">MAYA</span>
+                <span class="logo-sub">COLLECTION</span>
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="collections.html" class="nav-link active">Collections</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="reviews.html" class="nav-link">Reviews</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode"><i class="fa-solid fa-moon"></i></button>
+                <div class="menu-toggle" id="menu-toggle">
+                    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="inner-hero">
+        <div class="inner-hero-content">
+            <h1>Our Collections</h1>
+            <p>Explore luxury garments designed for every mood, season, and grand event.</p>
+        </div>
+    </section>
+
+    <!-- Advanced Interactive Catalog Grid Section -->
+    <section class="section catalog-section">
+        <div class="container">
+            <!-- Filter & Search Panel -->
+            <div class="catalog-filters">
+                <div class="filter-search-box">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="catalog-search" placeholder="Search by name, item type, design...">
+                </div>
+
+                <div class="filter-categories" id="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Styles</button>
+                    <button class="filter-btn" data-filter="Ethnic">Ethnic Wear</button>
+                    <button class="filter-btn" data-filter="Daily">Daily Wear</button>
+                    <button class="filter-btn" data-filter="Party">Party Wear</button>
+                    <button class="filter-btn" data-filter="Premium">Premium Collection</button>
+                </div>
+
+                <div class="sort-selector">
+                    <label for="sort-select">Sort By: </label>
+                    <select id="sort-select">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Dynamic Catalog Grid with 16 Realistic Demo Products -->
+            <div class="grid grid-4 catalog-grid" id="catalog-grid">
+                <!-- Products will be dynamically generated and populated by script.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox modal for Quick View -->
+    <div class="lightbox" id="quickview-modal">
+        <div class="lightbox-close" id="modal-close">&times;</div>
+        <div class="modal-content-wrapper">
+            <div class="modal-image">
+                <img id="modal-img-element" src="" alt="Product zoom view">
+            </div>
+            <div class="modal-details">
+                <span class="modal-tag" id="modal-tag">Ethnic Wear</span>
+                <h2 id="modal-title">Product Name</h2>
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+                <p class="modal-price" id="modal-price">₹4,999</p>
+                <p class="modal-desc" id="modal-description">Exquisite craftsmanship details combined with premium breathable luxury textile weave.</p>
+                <div class="modal-meta">
+                    <p><strong>Available Sizes:</strong> XS, S, M, L, XL, XXL, 3XL</p>
+                    <p><strong>Fabric:</strong> Handloomed Premium Silk & Organza Blend</p>
+                </div>
+                <a id="modal-whatsapp-enquire" href="" target="_blank" class="btn btn-primary" style="margin-top: 1.5rem;"><i class="fa-brands fa-whatsapp"></i> Enquire WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Actions -->
+    <div class="floating-cta-container">
+        <a href="https://wa.me/917022223381" class="floating-btn whatsapp-float" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="tel:+917022223381" class="floating-btn call-float"><i class="fa-solid fa-phone"></i></a>
+        <a href="#navbar" class="floating-btn back-to-top" id="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h2>MAYA COLLECTION</h2>
+                <p>Bringing classic tradition and contemporary elegance together into accessible everyday luxury fashion since 1979.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="gallery.html">Visual Gallery</a></li>
+                    <li><a href="reviews.html">Customer Reviews</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-hours">
+                <h3>Store Hours</h3>
+                <p>Open Daily<br><strong>11:00 AM – 11:00 PM</strong></p>
+            </div>
+            <div class="footer-contact">
+                <h3>Find Our Store</h3>
+                <p>Ground Floor, 11th Cross, 18th Main, Devaraj URS Nagar, Padarayana Pura, Bengaluru, Karnataka – 560026</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p>&copy; 2026 Maya Collection. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
